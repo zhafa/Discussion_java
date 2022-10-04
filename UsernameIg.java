@@ -1,10 +1,14 @@
+import java.io.*;
 import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-public class UsernameIg {
+public class hadiah {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-     Scanner input = new Scanner(System.in);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */ 
+        Scanner input = new Scanner(System.in);
         String ig = input.next();
         input.close();
         // String.length
@@ -22,32 +26,30 @@ public class UsernameIg {
 
         if (ig.contains("@")) {
  /*GENAP */  
-                if (ig.length() %2 == 1){
-                String cek2 = ig.substring(1, 2);
-                 if (cek2 == ("a") || cek2 == ("i") || cek2 == ("e") || cek2 == ("o"))
+                if (ig.length() % 2 == 1){
+                String cek = ig.substring(1, 2);
+                 if (cek.equals("a") || cek.equals("i") ||cek.equals("u") || cek.equals("e") || cek.equals("o"))
                  {
-                  System.out.println("Reward anda : reward Kaos"); 
+                  System.out.println("Reward anda : Meet n Greet"); 
                  } else {
-                    System.out.println("Reward anda : Meet n Greet");
+                    System.out.println("Reward anda : Kaos");
                  }
+                }
 /*GANJIL*/ 
-               if (ig.length() % 2 == 0) 
-                {
+               if (ig.length() % 2 == 0){
                 String cek = ig.substring(1, 2);    
-                  if (cek == ("a") || cek == ("i") || cek == ("e") || cek == ("o"))
+                  if (cek.equals("a") || cek.equals("i") ||cek.equals("u") || cek.equals("e") || cek.equals("o"))
                   {
-                   System.out.println("Reward anda : reward E-Money"); 
+                   System.out.println("Reward anda : E-Money"); 
                   } 
                   else 
                   {
-                    System.out.println("Reward anda : reward Pulsa");
+                    System.out.println("Reward anda : Pulsa");
                   }
-               }
+            
               }
             } else {
                 System.out.println("Username tidak valid");
             }
-            
-        
     }
 }
