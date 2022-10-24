@@ -15,9 +15,7 @@ public class Main {
             Angka2 = FPB;
             FPB = Angka1 % Angka2;
 
-
+            System.out.println("FPB nya adalah : " + Angka2);
         }
-        System.out.println("FPB nya adalah : " + Angka2);
-
     }
 }
